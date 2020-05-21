@@ -10,10 +10,8 @@
 \alias{tr18_d10}
 \alias{tr23_d10}
 \alias{tr24_d10}
-\alias{tr25_d10}
 \alias{tr28_d10}
 \alias{tr33_d10}
-\alias{tr36_d10}
 \alias{tr37_d10}
 \alias{tr39_d10}
 \alias{tr42_d10}
@@ -23,13 +21,12 @@
 \alias{tr50_d10}
 \alias{tr51_d10}
 \alias{tr54_d10}
-\alias{tr55_d10}
 \alias{tr72_d10}
 
 \docType{data}
 \title{
-   Provides the U.S. 2000 Census Tract Boundary data datasets for 23
-   States East of the Mississippi River for use with 
+   Provides the U.S. 2000 Census Tract Boundary data datasets for 20
+   States, District, and Territory East of the Mississippi River for use with 
    \var{SeerMapper} Package
 }
 \description{
@@ -41,21 +38,22 @@
  either three provide a set of census tract boundaries for one U. S. 
  census year (either 2000 or 2010). The \var{SeerMapperRegs} and 
  \var{Seer2010MapperRegs} packages contain the census tract 
- boundaries for the 15 states the have U. S. Seer Registries. The 
+ boundaries for the 19 states the have U. S. Seer Registries. The 
  remaining census tract boundaries are split into two packages for 
  each census year based on whether the state is east or west of the 
- Mississippi river.  The census tracts for 23 states without 
+ Mississippi river.  The census tracts for 20 states, district and territory without 
  registries east of the Mississippi river at contained in the 
  \var{SeerMapperEast} and \var{Seer2010MapperEast} packages. The 
- tract boundaries for the 14 states west of the Mississippi river are 
+ tract boundaries for the 13 states west of the Mississippi river are 
  in the \var{SeerMapperWest} and \var{Seer2010MapperWest} packages.  
  The states include the District of Columbia and Puerto Rico.
- This package provides the 2010 census tract boundaries for the 23 
- states without registries east of the Mississippi river.
+ This package provides the 2010 census tract boundaries for the 20 
+ states and district/territory without registries east of the Mississippi river.
  }
 \usage{data(tr01_d10)}
 \format{
- Each file contains a set of SpatialPolygons structures for the 23 states
+ Each file contains a set of SpatialPolygons structures for the 20 states, district,
+ and territory 
  east of the Mississippi that do not have Seer Registries.
  Each state structure is a list of the census tracts boundaries that 
  the state. Refer to the documentation on the \var{sp} package for 
@@ -66,7 +64,7 @@
 }
 \details{
   The \var{SeerMapperEast} and \var{SeerMapper2010East} packages contains 
-  23 eastern states including:
+  20 eastern states including:
   \preformatted{
     FIPS   Name
      01     Alabama
@@ -77,10 +75,8 @@
      18	    Indiana
      23     Maine
      24     Maryland
-     25     Massachusetts
      28	    Mississippi
      33	    New Hampshire
-     36	    New York
      37	    North Carolina
      39	    Ohio
      42     Pennsylvania
@@ -90,7 +86,6 @@
      50	    Vermont
      51	    Virginia
      54     West Virginia
-     55	    Wisconsin
      72	    Puerto Rico
   }
  The \var{SeerMapper} package contains the state and county boundary 
@@ -142,19 +137,15 @@
   #                For Example:   outDir <- "c:/RTestPDFs"
   outDir     <- tempdir()
   cat("Output Directory:",outDir,"\n")
-  
+
   stList     <- c("01","10","11","12","17",
-                  "18","23","24","25","28",
-                  "33","36","37","39","42",
-                  "44","45","47","50","51",
-                  "54","55","72"
-                 )
+                  "18","23","24","28","33",
+                  "37","39","42","44","45",
+                  "47","50","51","54","72")
   stName     <- c("Alabama","Delaware","Dist.of Columbia","Florida","Illinois",
-                  "Indiana","Maine","Maryland","Massachusetts","Mississippi",
-                  "New Hampshire","New York","North Carolina","Ohio","Pennsylvania",
-                  "Rhode Island","South Carolina","Tennessee","Vermont","Virginia",
-                  "West Virginia","Wisconsin","Puerto Rico"
-                )
+                  "Indiana","Maine","Maryland","Mississippi","New Hampshire",
+                  "North Carolina","Ohio","Pennsylvania","Rhode Island","South Carolina",
+                  "Tennessee","Vermont","Virginia","West Virginia","Puerto Rico")
   cY         <- "10"
 
   outFile    <- paste0("SeerMapperEast",cY,"-CT.pdf")
@@ -163,7 +154,7 @@
   
   pdf(outFN,width=7,height=10)
 
-  for (stN in seq(from=1, to=length(stList), by=8)) {  # Test print 3 of 23 states.
+  for (stN in seq(from=1, to=length(stList), by=8)) {  # Test print 3 of 20 states.
 
      stID    <- stList[stN]
      stNa    <- stName[stN]

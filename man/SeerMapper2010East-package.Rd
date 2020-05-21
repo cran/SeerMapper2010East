@@ -4,14 +4,14 @@
 \title{\var{SeerMapper}-Supplemental 2010 Census Tract East States Boundary Datasets}
 \description{
  The \var{SeerMapper2010East} package provides supplemental 2010 Census 
- Tract boundary datasets for states without Seer Registries that 
+ Tract boundary datasets for 20 states, district and territory without Seer Registries that 
  are east of the Mississippi river for use with \var{SeerMapper} package.
  
  The \var{SeerMapper2010West} data only package contains the 2010 census 
- tract boundary datasets for 14 states west of the Mississippi river
+ tract boundary datasets for 13 states west of the Mississippi river
  that do not have Seer Registries. The \var{SeerMapper2010Regs} 
  data only package contains the 2010 Census Tract boundary datasets 
- for 15 states with Seer Registries.
+ for 19 states with Seer Registries.
 
  By loading these packages (via the library function) expands the
  \var{SeerMapper} package abilities to map 2010 census tract level 
@@ -21,8 +21,8 @@
     \tabular{ll}{
       Package:  \tab SeerMapper2010East\cr
       Type:     \tab Package\cr
-      Version:  \tab 1.2.0\cr
-      Date:     \tab 2017-04-13\cr
+      Version:  \tab 1.2.2\cr
+      Date:     \tab 2019-07-23\cr
       License:  \tab GPL-2\cr
       LazyLoad: \tab no\cr
     } 
@@ -59,10 +59,8 @@ boundary datasets for:
      18	    Indiana
      23     Maine
      24     Maryland
-     25     Massachusetts
      28	    Mississippi
      33	    New Hampshire
-     36	    New York
      37	    North Carolina
      39	    Ohio
      42     Pennsylvania
@@ -72,14 +70,13 @@ boundary datasets for:
      50	    Vermont
      51	    Virginia
      54     West Virginia
-     55	    Wisconsin
      72	    Puerto Rico
   }
 }  
 \author{
-Jim Pearson \email{jpearson@statnetconsulting.com}\cr 
-Maintainer: "Jim Pearson" \email{jpearson@statnetconsulting.com}\cr 
-Package compiled by "Jim Pearson" \email{jpearson@statnetconsulting.com}
+Jim Pearson \email{jpearson0525@gmail.com}\cr 
+Maintainer: "Jim Pearson" \email{jpearson0525@gmail.com}\cr 
+Package compiled by "Jim Pearson" \email{jpearson0525@gmail.com}
 }
 
 
