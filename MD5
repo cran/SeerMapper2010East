@@ -1,6 +1,6 @@
-096238af6bec46c23bf9ba84f53abbe6 *DESCRIPTION
+d619001ea8b164198a32a13ea1de0618 *DESCRIPTION
 dd79721262094be4325a9ca3c4eb0401 *NAMESPACE
-368b410f22388be5672cddf5943bd4e6 *data/datalist
+1ce0245765edf6d505ddececdcf1f160 *data/datalist
 fcd5b7fca00d533e26100a6560d2d80f *data/tr01_d10.rda
 1bae9e94bbb03818cc8f59824d335804 *data/tr10_d10.rda
 fd70c37ac3f4ebf6757eec94520c57df *data/tr11_d10.rda
@@ -21,6 +21,6 @@ f92786070a3ff2d54adbf38519b61fac *data/tr45_d10.rda
 67710f5851867f6eea010515b2da17d6 *data/tr51_d10.rda
 47f80f4f90a04464c01c137e9fbc581c *data/tr54_d10.rda
 4cb00a29729501ab05b30b2186a09cd9 *data/tr72_d10.rda
-b44ebb89969974d0fd3c0792cbb91e7e *inst/NEWS
-db94565c60f21795c62632be1ae28b2c *man/SeerMapper2010East-package.Rd
+4751628bd6a7798bdd5b272ffb0e1b54 *inst/NEWS
+b49d7481275747bf7b5adf381cdf9b24 *man/SeerMapper2010East-package.Rd
 26652fd8307e88179374fa40c28eef5a *man/trXX_dXX.Rd
